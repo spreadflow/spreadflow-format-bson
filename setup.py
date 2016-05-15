@@ -14,7 +14,8 @@ setup(
     install_requires=[
         'pymongo'
     ],
-    zip_safe=False,
+    test_suite="spreadflow_format_bson.test",
+    zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Framework :: Twisted',

@@ -13,6 +13,6 @@ install:
 script:
   - pylint --errors-only spreadflow_format_bson
   - pyflakes spreadflow_format_bson
-  - coverage run `which trial` spreadflow_format_bson
+  - coverage run `python setup.py test`
 after_success:
   - coveralls
