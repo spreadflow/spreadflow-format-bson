@@ -66,3 +66,11 @@ class MessageParser(object):
             doc_start += doc_len
 
         self._buffer = self._buffer[doc_start:]
+
+class MessageBuilder(object):
+    """
+    Message builder for the BSON stream format.
+    """
+
+    def message(self, msg):
+        return BSON.encode(msg)
